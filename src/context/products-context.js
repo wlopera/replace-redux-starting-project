@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const productsContext = React.createContext({
+export const ProductsContext = React.createContext({
   products: [],
 });
 
@@ -33,8 +33,8 @@ export default (props) => {
   ]);
 
   return (
-    <productsContext.Provider value={{ products: productsList }}>
+    <ProductsContext.Provider value={{ products: productsList }}>
       {props.children}
-    </productsContext.Provider>
+    </ProductsContext.Provider>
   );
 };
